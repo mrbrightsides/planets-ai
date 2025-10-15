@@ -5,10 +5,10 @@ import { Suspense, useRef, useState } from "react";
 import * as THREE from "three";
 
 const nodes = [
-  { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/", desc: "Teman ngobrol dan brainstorming ringan." },
-  { name: "AI Blockchain", link: "https://learn3ai.vercel.app/", desc: "Penjelasan teknologi dan integrasi blockchain." },
-  { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/", desc: "AI untuk pembelajaran dan penjelasan konsep." },
-  { name: "AI Spiritual", link: "https://smartfaith.vercel.app/", desc: "Eksperimen dan sandbox untuk ide baru." },
+  { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/", desc: "Teman ngobrol santai: curhat, ngelawak, atau diskusi ringan." },
+  { name: "AI Blockchain", link: "https://learn3ai.vercel.app/", desc: "Penjelas teknologi & blockchain: dari konsep sampai integrasi." },
+  { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/", desc: "Asisten akademik: riset, nulis, dan bimbingan materi kampus." },
+  { name: "AI Spiritual", link: "https://smartfaith.vercel.app/", desc: "Refleksi dan pemikiran mendalam: dialog santai ke arah spiritual." },
 ];
 
 function FloatingSphere({ position, color, name, link, desc, onHover }) {
