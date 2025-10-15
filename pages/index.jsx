@@ -4,7 +4,6 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import { Suspense, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import * as THREE from "three";
-import '../styles/globals.css';
 
 const nodes = [
   { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/", desc: "Teman ngobrol santai: curhat, ngelawak, atau diskusi ringan." },
