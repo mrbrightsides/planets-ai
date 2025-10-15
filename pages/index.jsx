@@ -32,7 +32,7 @@ useFrame(({ clock }) => {
   return (
     <mesh
       ref={mesh}
-      onClick={() => window.open(link, "_blank")}
+      onClick={() => window.location.href = link}
       onPointerOver={() => {
         setHover(true);
         onHover(name, desc);
@@ -113,8 +113,8 @@ export default function Home() {
       
         <p>🔵 <b>AI Tongkrongan</b> — <i>Teman ngobrol santai</i>: curhat, ngelawak, atau diskusi ringan.</p>
         <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
-        <p>🟡 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
-        <p>🟢 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
+        <p>🟢 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
+        <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
       </section>
 
       <div className="absolute bottom-10 w-full text-center">
