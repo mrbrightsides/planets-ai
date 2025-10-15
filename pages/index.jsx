@@ -29,9 +29,6 @@ function FloatingSphere({ index, color, name, link, desc, onHover }) {
   mesh.current.rotation.y += 0.003;
 });
 
-  mesh.current.rotation.y += 0.005;
-});
-
   return (
     <mesh
       ref={mesh}
