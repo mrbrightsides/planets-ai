@@ -20,11 +20,11 @@ function FloatingSphere({ index, color, name, link, desc, onHover }) {
 
 useFrame(({ clock }) => {
   const t = clock.getElapsedTime() * speed + angleOffset;
-
-  const hoverFactor = hovered ? 0.1 : 1;
-  mesh.current.position.x = Math.cos(t) * radius * hoverFactor;
-  mesh.current.position.y = Math.sin(t * 0.9) * radius * 0.5 * hoverFactor;
-  mesh.current.position.z = Math.sin(t) * radius * hoverFactor;
+  if (!hovered) {
+    mesh.current.position.x = Math.cos(t) * radius;
+    mesh.current.position.y = Math.sin(t * 0.9) * radius * 0.5;
+    mesh.current.position.z = Math.sin(t) * radius;
+  }
 
   mesh.current.rotation.y += 0.003;
 });
