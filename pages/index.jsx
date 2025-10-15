@@ -141,15 +141,20 @@ export default function Home() {
             <p className="text-sm opacity-80">{hoveredInfo.desc}</p>
           </div>
         ) : (
-          <p className="text-sm opacity-60 italic">💡 Click one of the circles to dive into different personalities of AI</p>
+          <p className="text-sm opacity-60 italic">
+            💡 Click one of the circles to dive into different personalities of AI
+          </p>
         )}
       </div>
 
-      <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
-
+      <div className="relative w-full flex justify-center">
+        <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-[0_0_15px_rgba(147,51,234,0.5)]" />
+      </div>
+      
       <footer className="absolute bottom-2 left-4 text-xs opacity-70">
         Powered by Vercel • React Three Fiber
       </footer>
+
     </div>
   );
 }
