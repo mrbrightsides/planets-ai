@@ -117,7 +117,17 @@ export default function Home() {
       </section>
 
       <div className="relative w-full flex justify-center z-10">
-        <div className="divider-gradient" style={{height: "6px"}} />
+        <div className="divider-gradient" style={{height: "6px",
+          width: "100%",
+          borderRadius: "9999px",
+          margin: "1.5rem 0",
+          border: "1px solid rgba(255,255,255,0.12)",
+          background: "linear-gradient(90deg, #22d3ee, #9bbcff, #c49bff, #fde047)",
+          boxShadow: "0 0 16px 4px #8259f7, 0 0 12px 0px #22d3ee20",
+          opacity: "0.92",
+          position: "relative",
+          zIndex: 20}} 
+        />
       </div>
       <motion.section
         className="text-white mt-4 text-sm space-y-2"
