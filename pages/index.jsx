@@ -82,31 +82,10 @@ export default function Home() {
         <span>AI Lounge</span>
       </motion.h1>
 
-      <Canvas
-        camera={{ position: [0, 0, 12], fov: 50 }}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 0,
-          pointerEvents: "none",
-        }}
-      >
-        <ambientLight intensity={0.5} />
-        <pointLight position={[5, 5, 10]} />
-      
-        <Stars
-          radius={80}
-          depth={40}
-          count={3000}
-          factor={3}
-          saturation={0}
-          fade
-          speed={0.5}
-        />
-      
+      <Canvas camera={{ position: [0, 0, 6] }}>
+        <ambientLight intensity={0.4} />
+        <pointLight position={[10, 10, 10]} />
+        <Stars radius={100} depth={50} count={4000} factor={4} saturation={0} fade speed={1} />
         <Suspense fallback={null}>
           {nodes.map((n, i) => (
             <FloatingSphere
@@ -117,13 +96,10 @@ export default function Home() {
               link={n.link}
               desc={n.desc}
               onHover={(name, desc) => setHoveredInfo({ name, desc })}
-              orbitRadius={3 + i * 0.8} // biar planet makin jauh sedikit demi sedikit
-              scale={0.3} // biar ukuran planet pas
             />
           ))}
         </Suspense>
-      
-        <OrbitControls enableZoom={false} enablePan={false} />
+        <OrbitControls enableZoom={false} />
       </Canvas>
 
       <section className="about-section">
@@ -141,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative z-10 w-full flex justify-center">
+      <div className="relative w-full flex justify-center">
         <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
       </div>
       <motion.section
@@ -158,7 +134,7 @@ export default function Home() {
         <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
       </motion.section>
 
-      <div className="relative z-10 absolute bottom-10 w-full text-center">
+      <div className="absolute bottom-10 w-full text-center">
         {hoveredInfo.name ? (
           <div>
             <p className="text-xl font-semibold">{hoveredInfo.name}</p>
@@ -171,11 +147,11 @@ export default function Home() {
         )}
       </div>
 
-      <div className="relative z-10 w-full flex justify-center">
+      <div className="relative w-full flex justify-center">
         <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-8 rounded-full border border-white/20 shadow-[0_0_25px_rgba(147,51,234,0.6)] opacity-90" />
       </div>
       
-      <footer className="relative z-10 mt-8 pb-4 text-center text-xs opacity-70">
+      <footer className="relative mt-8 pb-4 text-center text-xs opacity-70">
         Powered by Vercel • React Three Fiber
       </footer>
 
