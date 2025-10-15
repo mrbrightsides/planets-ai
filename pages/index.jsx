@@ -2,6 +2,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { Suspense, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import * as THREE from "three";
 
 const nodes = [
@@ -69,9 +70,18 @@ export default function Home() {
         overflow: "hidden",
       }}
     >
-      <h1 className="text-4xl font-bold text-center pt-6">
-        🌌 AI Lounge
-      </h1>
+      <motion.h1
+        className="text-2xl md:text-3xl font-extrabold text-white tracking-wide flex items-center justify-center space-x-2"
+        initial={{ y: 0 }}
+        animate={{ y: [0, -6, 0] }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <span>AI Lounge</span>
+      </motion.h1>
 
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={0.4} />
@@ -108,14 +118,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-white mt-4 text-sm space-y-2">
+      <div className="w-full h-[2px] bg-gradient-to-r from-cyan-400/40 via-purple-400/40 to-yellow-400/40 my-4 rounded-full" />
+
+      <motion.section
+        className="text-white mt-4 text-sm space-y-2"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         <h3 className="font-semibold text-lg mb-2">🪐 AI Planet Guide</h3>
-      
         <p>🔵 <b>AI Tongkrongan</b> — <i>Teman ngobrol santai</i>: curhat, ngelawak, atau diskusi ringan.</p>
         <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
         <p>🟢 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
         <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
-      </section>
+      </motion.section>
 
       <div className="absolute bottom-10 w-full text-center">
         {hoveredInfo.name ? (
@@ -127,6 +144,8 @@ export default function Home() {
           <p className="text-sm opacity-60 italic">💡 Click one of the circles to dive into different personalities of AI</p>
         )}
       </div>
+
+      <div className="w-full h-[2px] bg-gradient-to-r from-cyan-400/40 via-purple-400/40 to-yellow-400/40 my-4 rounded-full" />
 
       <footer className="absolute bottom-2 left-4 text-xs opacity-70">
         Powered by Vercel • React Three Fiber
