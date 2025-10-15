@@ -18,7 +18,7 @@ function FloatingSphere({ index, color, name, link, desc, onHover }) {
   const speed = 0.2 + Math.random() * 0.3;
   const angleOffset = Math.random() * Math.PI * 2;
 
-  useFrame(({ clock }) => {
+useFrame(({ clock }) => {
   const t = clock.getElapsedTime() * speed + angleOffset;
 
   const hoverFactor = hovered ? 0.1 : 1;
