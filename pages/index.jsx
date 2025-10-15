@@ -102,10 +102,10 @@ export default function Home() {
               ease: "easeInOut"
             }}
           >
-            <p>Welcome to AI Lounge</p>
+            <p>Welcome to Planets AI</p>
           </motion.h1>
           <p>
-            AI (Artificial Intelligence) Lounge by Khudri is a creative space exploring the intersection of 
+            AI (Artificial Intelligence) lounge by Khudri is a creative space exploring the intersection of 
             artificial intelligence, design, science, technology, religion, and imagination. Each AI represents 
             a different capability — from storytelling to smart analytics.
           </p>
