@@ -157,8 +157,18 @@ export default function Home() {
       </div>
 
       <div className="relative w-full flex justify-center z-10">
-        <div className="divider-gradient" />
-        <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-8 rounded-full border border-white/20 shadow-[0_0_25px_rgba(147,51,234,0.6)] opacity-90" />
+        <div className="divider-gradient" style={{
+          height: "6px",
+          width: "100%",
+          borderRadius: "9999px",
+          margin: "2rem 0",
+          border: "1px solid rgba(255,255,255,0.12)",
+          background: "linear-gradient(90deg, #fde047, #c49bff, #9bbcff, #22d3ee)",
+          boxShadow: "0 0 16px 4px #22d3ee60, 0 0 12px 0px #8259f720", // bisa tweaked sesuai feel
+          opacity: "0.92",
+          position: "relative",
+          zIndex: 20}}
+        />
       </div>
       
       <footer className="relative mt-8 pb-4 text-center text-xs opacity-70">
