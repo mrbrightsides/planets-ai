@@ -55,21 +55,6 @@ useFrame(({ clock }) => {
   );
 }
 
-<section className="about-section">
-  <div className="about-content">
-    <h2>Welcome to AI Lounge</h2>
-    <p>
-      AI Lounge by Khudri is a creative space exploring the intersection of 
-      artificial intelligence, design, and imagination. Each AI represents 
-      a different capability — from storytelling to smart analytics.
-    </p>
-    <p>
-      Dive into the cosmic playground of ideas where humans and AI 
-      collaborate to build the future.
-    </p>
-  </div>
-</section>
-
 export default function Home() {
   const [hoveredInfo, setHoveredInfo] = useState({ name: null, desc: null });
   const colors = ["#9bbcff", "#c49bff", "#9bffd6", "#ffe29b"];
@@ -107,6 +92,21 @@ export default function Home() {
         </Suspense>
         <OrbitControls enableZoom={false} />
       </Canvas>
+
+      <section className="about-section">
+        <div className="about-content">
+          <h2>Welcome to AI Lounge</h2>
+          <p>
+            AI Lounge by Khudri is a creative space exploring the intersection of 
+            artificial intelligence, design, and imagination. Each AI represents 
+            a different capability — from storytelling to smart analytics.
+          </p>
+          <p>
+            Dive into the cosmic playground of ideas where humans and AI 
+            collaborate to build the future.
+          </p>
+        </div>
+      </section>
 
       <div className="absolute bottom-10 w-full text-center">
         {hoveredInfo.name ? (
