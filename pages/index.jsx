@@ -59,7 +59,7 @@ useFrame(({ clock }) => {
 
 export default function Home() {
   const [hoveredInfo, setHoveredInfo] = useState({ name: null, desc: null });
-  const colors = ["#9bbcff", "#c49bff", "#9bffd6", "#ffe29b", "#b9fa"];
+  const colors = ["#9bbcff", "#c49bff", "#9bffd6", "#ffe29b", "#FF3B30"];
 
   return (
     <div
@@ -142,7 +142,7 @@ export default function Home() {
         <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
         <p>🟢 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
         <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
-        <p>⬤ <b>AI Coding</b> — <i>Belajar coding</i>: partner terbaik untuk membuat web atau aplikasi.</p>
+        <p>🔴 <b>AI Coding</b> — <i>Belajar coding</i>: partner terbaik untuk membuat web atau aplikasi.</p>
       </motion.section>
 
       <div className="absolute bottom-10 w-full text-center">
