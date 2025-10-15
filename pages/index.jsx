@@ -10,6 +10,7 @@ const nodes = [
   { name: "AI Blockchain", link: "https://learn3ai.vercel.app/", desc: "Penjelas teknologi & blockchain: dari konsep sampai integrasi." },
   { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/", desc: "Asisten akademik: riset, nulis, dan bimbingan materi kampus." },
   { name: "AI Spiritual", link: "https://smartfaith.vercel.app/", desc: "Refleksi dan pemikiran mendalam: dialog santai ke arah spiritual." },
+  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/", desc: "Belajar coding python dan semua jenis bahasa pemrograman lainnya." },
 ];
 
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
@@ -58,7 +59,7 @@ useFrame(({ clock }) => {
 
 export default function Home() {
   const [hoveredInfo, setHoveredInfo] = useState({ name: null, desc: null });
-  const colors = ["#9bbcff", "#c49bff", "#9bffd6", "#ffe29b"];
+  const colors = ["#9bbcff", "#c49bff", "#9bffd6", "#ffe29b", "#b9fa"];
 
   return (
     <div
@@ -141,6 +142,7 @@ export default function Home() {
         <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
         <p>🟢 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
         <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
+        <p>⬤ <b>AI Coding</b> — <i>Belajar coding</i>: partner terbaik untuk membuat web atau aplikasi.</p>
       </motion.section>
 
       <div className="absolute bottom-10 w-full text-center">
@@ -164,7 +166,7 @@ export default function Home() {
           margin: "2rem 0",
           border: "1px solid rgba(255,255,255,0.12)",
           background: "linear-gradient(90deg, #fde047, #c49bff, #9bbcff, #22d3ee)",
-          boxShadow: "0 0 16px 4px #22d3ee60, 0 0 12px 0px #8259f720", // bisa tweaked sesuai feel
+          boxShadow: "0 0 16px 4px #22d3ee60, 0 0 12px 0px #8259f720",
           opacity: "0.92",
           position: "relative",
           zIndex: 20}}
