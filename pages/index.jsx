@@ -118,7 +118,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full h-[3px] bg-gradient-to-r from-cyan-400/60 via-purple-500/60 to-yellow-400/60 my-6 rounded-full shadow-[0_0_15px_rgba(147,51,234,0.4)]" />
+      <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
 
       <motion.section
         className="text-white mt-4 text-sm space-y-2"
@@ -145,7 +145,7 @@ export default function Home() {
         )}
       </div>
 
-      <div className="w-full h-[3px] bg-gradient-to-r from-cyan-400/60 via-purple-500/60 to-yellow-400/60 my-6 rounded-full shadow-[0_0_15px_rgba(147,51,234,0.4)]" />
+      <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
 
       <footer className="absolute bottom-2 left-4 text-xs opacity-70">
         Powered by Vercel • React Three Fiber
