@@ -108,6 +108,15 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="text-white mt-4 text-sm space-y-2">
+        <h3 className="font-semibold text-lg mb-2">🪐 AI Planet Guide</h3>
+      
+        <p>🔵 <b>AI Tongkrongan</b> — <i>Teman ngobrol santai</i>: curhat, ngelawak, atau diskusi ringan.</p>
+        <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
+        <p>🟡 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
+        <p>🟢 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
+      </section>
+
       <div className="absolute bottom-10 w-full text-center">
         {hoveredInfo.name ? (
           <div>
