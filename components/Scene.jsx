@@ -46,14 +46,14 @@ export default function Scene() {
           />
           <AIOrb
             position={positions.edukasi}
-            color={'#FDBA74'}
+            color={'#5EEAD4'}
             label={'AI Edukasi'}
             description={'Asisten akademik: riset, nulis, dan bimbingan materi kampus.'}
             url={'https://rantai-nexus.vercel.app/'}
           />
           <AIOrb
             position={positions.spiritual}
-            color={'#5EEAD4'}
+            color={'#FDBA74'}
             label={'AI Spiritual'}
             description={'Refleksi dan pemikiran mendalam: dialog santai ke arah spiritual.'}
             url={'https://smartfaith.vercel.app/'}
