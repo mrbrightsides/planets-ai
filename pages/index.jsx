@@ -67,7 +67,6 @@ export default function Home() {
         background: "radial-gradient(circle at 20% 20%, #120032, #000010)",
         color: "white",
         fontFamily: "serif",
-        overflow: "hidden",
       }}
     >
       <motion.h1
@@ -118,8 +117,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
-
+      <div className="relative w-full flex justify-center">
+        <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
+      </div>
       <motion.section
         className="text-white mt-4 text-sm space-y-2"
         initial={{ opacity: 0, y: 40 }}
@@ -148,7 +148,7 @@ export default function Home() {
       </div>
 
       <div className="relative w-full flex justify-center">
-        <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-[0_0_15px_rgba(147,51,234,0.5)]" />
+        <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-8 rounded-full border border-white/20 shadow-[0_0_25px_rgba(147,51,234,0.6)] opacity-90" />
       </div>
       
       <footer className="absolute bottom-2 left-4 text-xs opacity-70">
