@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative w-full flex justify-center">
+      <div className="relative w-full flex justify-center z-10">
         <div className="w-full h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg" />
       </div>
       <motion.section
@@ -146,7 +146,7 @@ export default function Home() {
         )}
       </div>
 
-      <div className="relative w-full flex justify-center">
+      <div className="relative w-full flex justify-center z-10">
         <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-8 rounded-full border border-white/20 shadow-[0_0_25px_rgba(147,51,234,0.6)] opacity-90" />
       </div>
       
