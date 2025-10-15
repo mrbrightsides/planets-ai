@@ -29,6 +29,11 @@ It’s not just an interface — it’s a statement that AI can be beautiful, ex
 
 - 🌍 Part of the RANTAI Ecosystem – Serving as the “creative gateway” connecting other AI & Web3 projects.
 
+But here’s the twist —
+Each AI can channel different models through the AI Gateway, including:
+⚡ GPT, Claude, Gemini, Mistral, LLaMA, Grok, and Nova.
+Every model gives a different flavor to your interaction — from poetic to technical, from zen to chaotic.
+
 ---
 
 ## 🌠 Vision
@@ -44,4 +49,5 @@ where users can interact with various AIs that share, debate, and even build tog
 ## 🔗 Explore
 
 Visit: https://planets-ai.vercel.app
+
 Built with ❤️ by Khudri — blending imagination, science, and spirituality through technology.
