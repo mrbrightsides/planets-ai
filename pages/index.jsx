@@ -102,7 +102,7 @@ export default function Home() {
               ease: "easeInOut"
             }}
           >
-            <span>Welcome to AI Lounge<</span>
+            <h1>Welcome to AI Lounge</h1>
           </motion.h1>
           <p>
             AI (Artificial Intelligence) Lounge by Khudri is a creative space exploring the intersection of 
