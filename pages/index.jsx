@@ -70,7 +70,7 @@ export default function Home() {
       }}
     >
       <h1 className="text-4xl font-bold text-center pt-6">
-        🌌 AI Lounge by Khudri
+        🌌 AI Lounge
       </h1>
 
       <Canvas camera={{ position: [0, 0, 6] }}>
@@ -97,8 +97,8 @@ export default function Home() {
         <div className="about-content">
           <h2>Welcome to AI Lounge</h2>
           <p>
-            AI Lounge by Khudri is a creative space exploring the intersection of 
-            artificial intelligence, design, and imagination. Each AI represents 
+            AI (Artificial Intelligence) Lounge by Khudri is a creative space exploring the intersection of 
+            artificial intelligence, design, science, technology, religion, and imagination. Each AI represents 
             a different capability — from storytelling to smart analytics.
           </p>
           <p>
@@ -115,7 +115,7 @@ export default function Home() {
             <p className="text-sm opacity-80">{hoveredInfo.desc}</p>
           </div>
         ) : (
-          <p className="text-sm opacity-60 italic">Arahkan kursor ke salah satu AI</p>
+          <p className="text-sm opacity-60 italic">💡 Click one of the circles to dive into different personalities of AI</p>
         )}
       </div>
 
