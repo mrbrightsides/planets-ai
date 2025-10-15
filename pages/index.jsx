@@ -83,7 +83,7 @@ export default function Home() {
       </motion.h1>
 
       <Canvas
-        camera={{ position: [0, 0, 6] }}
+        camera={{ position: [0, 0, 12], fov: 50 }}
         style={{
           position: "absolute",
           top: 0,
@@ -91,20 +91,22 @@ export default function Home() {
           width: "100%",
           height: "100%",
           zIndex: 0,
-          pointerEvents: "none", // biar elemen di atasnya bisa diklik
+          pointerEvents: "none",
         }}
       >
-        <ambientLight intensity={0.4} />
-        <pointLight position={[10, 10, 10]} />
+        <ambientLight intensity={0.5} />
+        <pointLight position={[5, 5, 10]} />
+      
         <Stars
-          radius={100}
-          depth={50}
-          count={4000}
-          factor={4}
+          radius={80}
+          depth={40}
+          count={3000}
+          factor={3}
           saturation={0}
           fade
-          speed={1}
+          speed={0.5}
         />
+      
         <Suspense fallback={null}>
           {nodes.map((n, i) => (
             <FloatingSphere
@@ -115,10 +117,13 @@ export default function Home() {
               link={n.link}
               desc={n.desc}
               onHover={(name, desc) => setHoveredInfo({ name, desc })}
+              orbitRadius={3 + i * 0.8} // biar planet makin jauh sedikit demi sedikit
+              scale={0.3} // biar ukuran planet pas
             />
           ))}
         </Suspense>
-        <OrbitControls enableZoom={false} />
+      
+        <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
 
       <section className="about-section">
