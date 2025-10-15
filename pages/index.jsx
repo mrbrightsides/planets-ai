@@ -117,8 +117,7 @@ export default function Home() {
       </section>
 
       <div className="relative w-full flex justify-center z-10">
-        <div className="divider-gradient" style={{height: "6px", background: "red"}} />
-        <div className="w-full h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-6 rounded-full border border-white/20 shadow-lg z-50" />
+        <div className="divider-gradient" style={{height: "6px"}} />
       </div>
       <motion.section
         className="text-white mt-4 text-sm space-y-2"
