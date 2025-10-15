@@ -69,18 +69,6 @@ export default function Home() {
         fontFamily: "serif",
       }}
     >
-      <motion.h1
-        className="text-2xl md:text-3xl font-extrabold text-white tracking-wide flex items-center justify-center space-x-2"
-        initial={{ y: 0 }}
-        animate={{ y: [0, -6, 0] }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <span>AI Lounge</span>
-      </motion.h1>
 
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={0.4} />
@@ -104,7 +92,18 @@ export default function Home() {
 
       <section className="about-section">
         <div className="about-content">
-          <h2>Welcome to AI Lounge</h2>
+          <motion.h1
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide flex items-center justify-center space-x-2"
+            initial={{ y: 0 }}
+            animate={{ y: [0, -6, 0] }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <span>Welcome to AI Lounge<</span>
+          </motion.h1>
           <p>
             AI (Artificial Intelligence) Lounge by Khudri is a creative space exploring the intersection of 
             artificial intelligence, design, science, technology, religion, and imagination. Each AI represents 
