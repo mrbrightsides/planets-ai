@@ -62,7 +62,7 @@ export default function Home() {
 
   return (
     <div
-      className="h-screen w-screen relative"
+      className="min-h-screen w-screen relative"
       style={{
         background: "radial-gradient(circle at 20% 20%, #120032, #000010)",
         color: "white",
@@ -151,7 +151,7 @@ export default function Home() {
         <div className="w-3/4 h-[4px] bg-gradient-to-r from-cyan-400 via-purple-500 to-yellow-400 my-8 rounded-full border border-white/20 shadow-[0_0_25px_rgba(147,51,234,0.6)] opacity-90" />
       </div>
       
-      <footer className="absolute bottom-2 left-4 text-xs opacity-70">
+      <footer className="relative mt-8 pb-4 text-center text-xs opacity-70">
         Powered by Vercel • React Three Fiber
       </footer>
 
