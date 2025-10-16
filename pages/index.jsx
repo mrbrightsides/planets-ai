@@ -94,7 +94,7 @@ export default function Home() {
       <section className="about-section">
         <div className="about-content">
           <motion.h1
-            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide flex items-center justify-center space-x-2"
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center"
             initial={{ y: 0 }}
             animate={{ y: [0, -6, 0] }}
             transition={{
@@ -103,8 +103,9 @@ export default function Home() {
               ease: "easeInOut"
             }}
           >
-            <p>Welcome to Planets AI</p>
+            Welcome to Planets AI
           </motion.h1>
+
           <p>
             AI (Artificial Intelligence) lounge by Khudri is a creative space exploring the intersection of 
             artificial intelligence, design, science, technology, religion, and imagination. Each AI represents 
@@ -173,7 +174,7 @@ export default function Home() {
         />
       </div>
       
-      <footer className="relative mt-8 pb-4 text-center text-xs opacity-70">
+      <footer className="w-full text-center text-xs opacity-70 absolute bottom-0 left-0 pb-4">
         Powered by Vercel • React Three Fiber
       </footer>
 
