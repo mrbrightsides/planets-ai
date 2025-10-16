@@ -16,7 +16,7 @@ const nodes = [
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
   const mesh = useRef();
   const [hovered, setHover] = useState(false);
-  const radius = 2 + Math.random() * 1.5;
+  const radius = 2.5 + Math.random() * 1.5;
   const speed = 0.2 + Math.random() * 0.3;
   const angleOffset = Math.random() * Math.PI * 2;
 
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="about-section">
         <div className="about-content">
           <motion.h1
-            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center"
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center mx-auto"
             initial={{ y: 0 }}
             animate={{ y: [0, -6, 0] }}
             transition={{
@@ -174,8 +174,8 @@ export default function Home() {
         />
       </div>
       
-      <footer className="w-full text-center mt-8 pb-4 text-xs opacity-70">
-        Powered by Vercel • React Three Fiber
+      <footer className="absolute bottom-0 left-0 w-full text-center pb-4 text-xs text-gray-400 opacity-80 tracking-wide">
+        Powered by <span className="text-white font-semibold">Vercel</span> • React Three Fiber
       </footer>
       
     </div>
