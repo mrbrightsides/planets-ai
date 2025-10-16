@@ -94,7 +94,7 @@ export default function Home() {
       <section className="about-section">
         <div className="about-content">
           <motion.h1
-            className=""text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center mx-auto mb-4""
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center mx-auto mb-4"
             initial={{ y: 0 }}
             animate={{ y: [0, -6, 0] }}
             transition={{
