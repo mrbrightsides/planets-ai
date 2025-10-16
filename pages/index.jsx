@@ -174,10 +174,10 @@ export default function Home() {
         />
       </div>
       
-      <footer className="w-full text-center text-xs opacity-70 absolute bottom-0 left-0 pb-4">
+      <footer className="w-full text-center mt-8 pb-4 text-xs opacity-70">
         Powered by Vercel • React Three Fiber
       </footer>
-
+      
     </div>
   );
 }
