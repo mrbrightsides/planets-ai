@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import * as THREE from "three";
 
 const nodes = [
-  { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/", desc: "Teman ngobrol santai: curhat, ngelawak, atau diskusi ringan." },
-  { name: "AI Blockchain", link: "https://learn3ai.vercel.app/", desc: "Penjelas teknologi & blockchain: dari konsep sampai integrasi." },
-  { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/", desc: "Asisten akademik: riset, nulis, dan bimbingan materi kampus." },
-  { name: "AI Spiritual", link: "https://smartfaith.vercel.app/", desc: "Refleksi dan pemikiran mendalam: dialog santai ke arah spiritual." },
-  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/", desc: "Belajar coding python dan semua jenis bahasa pemrograman lainnya." },
+  { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/" },
+  { name: "AI Blockchain", link: "https://learn3ai.vercel.app/" },
+  { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/" },
+  { name: "AI Spiritual", link: "https://smartfaith.vercel.app/" },
+  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/" },
 ];
 
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
