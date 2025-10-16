@@ -63,7 +63,7 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen w-screen relative"
+      className="min-h-screen w-screen relative flex flex-col justify-between items-center text-center"
       style={{
         background: "radial-gradient(circle at 20% 20%, #120032, #000010)",
         color: "white",
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="about-section">
         <div className="about-content">
           <motion.h1
-            className="text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center mx-auto"
+            className=""text-2xl md:text-3xl font-extrabold text-white tracking-wide text-center mx-auto mb-4""
             initial={{ y: 0 }}
             animate={{ y: [0, -6, 0] }}
             transition={{
@@ -105,6 +105,9 @@ export default function Home() {
           >
             Welcome to Planets AI
           </motion.h1>
+          <p className="text-sm opacity-70 italic mt-1">
+            A cosmic network of AI minds — each planet, a unique personality.
+          </p>
 
           <p>
             AI (Artificial Intelligence) lounge by Khudri is a creative space exploring the intersection of 
@@ -174,10 +177,10 @@ export default function Home() {
         />
       </div>
       
-      <footer className="absolute bottom-0 left-0 w-full text-center pb-4 text-xs text-gray-400 opacity-80 tracking-wide">
+      <footer className="w-full text-center py-4 text-xs text-gray-400 opacity-80 tracking-wide mt-auto">
         Powered by <span className="text-white font-semibold">Vercel</span> • React Three Fiber
       </footer>
-      
+
     </div>
   );
 }
