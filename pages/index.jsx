@@ -175,7 +175,7 @@ export default function Home() {
       </div>
       
       <footer className="absolute bottom-0 left-0 w-full text-center pb-4 text-xs text-gray-400 opacity-80 tracking-wide">
-        Powered by <span className="text-white font-semibold">Vercel</span> • React Three Fiber
+        @2025 Planets AI — Powered by <span className="text-white font-semibold">Vercel</span> • React Three Fiber
       </footer>
       
     </div>
