@@ -27,7 +27,9 @@ It’s not just an interface — it’s a statement that AI can be beautiful, ex
 
 - ⚡ Human–AI Collaboration – Designed to show AI not as a tool, but as a creative partner.
 
-- 🌍 Part of the RANTAI Ecosystem – Serving as the “creative gateway” connecting other AI & Web3 projects.
+- ⚙ AI Coding – your partner to code everything. It's time for you to shine.</p>
+
+- 🌍 Part of the ELPEEF Platform – Serving as the “creative gateway” connecting other AI & Web3 projects.
 
 But here’s the twist —
 Each AI can channel different models through the AI Gateway, including:
