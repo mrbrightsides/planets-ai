@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import * as THREE from "three";
 
 const nodes = [
-  { name: "AI Tongkrongan", link: "https://lpf-ai-buddy.vercel.app/" },
+  { name: "AI Buddy", link: "https://lpf-ai-buddy.vercel.app/" },
   { name: "AI Blockchain", link: "https://learn3ai.vercel.app/" },
   { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/" },
   { name: "AI Spiritual", link: "https://smartfaith.vercel.app/" },
@@ -139,7 +139,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <h3 className="font-semibold text-lg mb-2">🪐 AI Planet Guide</h3>
-        <p>🔵 <b>AI Tongkrongan</b> — <i>Teman ngobrol santai</i>: curhat, ngelawak, atau diskusi ringan.</p>
+        <p>🔵 <b>AI Buddy</b> — <i>Teman ngobrol santai</i>: curhat, ngelawak, atau diskusi ringan.</p>
         <p>🟣 <b>AI Blockchain</b> — <i>Penjelas teknologi & blockchain</i>: dari konsep sampai integrasi.</p>
         <p>🟢 <b>AI Edukasi</b> — <i>Asisten akademik</i>: riset, nulis, dan bimbingan materi kampus.</p>
         <p>🟡 <b>AI Spiritual</b> — <i>Refleksi dan pemikiran mendalam</i>: dialog santai ke arah spiritual.</p>
