@@ -34,7 +34,17 @@ useFrame(({ clock }) => {
   return (
     <mesh
       ref={mesh}
-      onClick={() => window.open(link, "_self")}
+      onClick={() => {
+        const isWebView =
+          /wv/.test(navigator.userAgent) || window.ReactNativeWebView || /FBAN|FBAV|Instagram/.test(navigator.userAgent);
+        
+        if (isWebView) {
+          window.location.href = link;
+        } else {
+          window.open(link, "_self");
+        }
+      }}
+
       onPointerOver={() => {
         setHover(true);
         onHover(name, desc);
