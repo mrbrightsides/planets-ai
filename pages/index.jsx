@@ -34,7 +34,7 @@ useFrame(({ clock }) => {
   return (
     <mesh
       ref={mesh}
-      onClick={() => window.location.href = link}
+      onClick={() => window.open(link, "_self")}
       onPointerOver={() => {
         setHover(true);
         onHover(name, desc);
