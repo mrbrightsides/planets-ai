@@ -10,7 +10,7 @@ const nodes = [
   { name: "AI Blockchain", link: "https://learn3ai.vercel.app/" },
   { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/" },
   { name: "AI Spiritual", link: "https://smartfaith.vercel.app/" },
-  { name: "AI Coding", link: "https://ai-buddy.elpeef.com/" },
+  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/" },
 ];
 
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
@@ -34,17 +34,7 @@ useFrame(({ clock }) => {
   return (
     <mesh
       ref={mesh}
-      onClick={() => {
-        const isWebView =
-          /wv/.test(navigator.userAgent) || window.ReactNativeWebView || /FBAN|FBAV|Instagram/.test(navigator.userAgent);
-        
-        if (isWebView) {
-          window.location.href = link;
-        } else {
-          window.open(link, "_self");
-        }
-      }}
-
+      onClick={() => window.location.href = link}
       onPointerOver={() => {
         setHover(true);
         onHover(name, desc);
@@ -117,13 +107,13 @@ export default function Home() {
           </motion.h1>
 
           <p>
-            AI (Artificial Intelligence) lounge by Khudri is a creative space exploring the intersection of 
+            AI (Artificial Intelligence) Planets is a creative space exploring the intersection of 
             artificial intelligence, design, science, technology, religion, and imagination. Each AI represents 
             a different capability — from storytelling to smart analytics.
           </p>
           <p>
             Dive into the cosmic playground of ideas where humans and AI 
-            collaborate to build the future.
+            collaborate to build the better future.
           </p>
         </div>
       </section>
