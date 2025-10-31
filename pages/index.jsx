@@ -10,7 +10,7 @@ const nodes = [
   { name: "AI Blockchain", link: "https://learn3ai.vercel.app/" },
   { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/" },
   { name: "AI Spiritual", link: "https://smartfaith.vercel.app/" },
-  { name: "AI Coding", link: "https://ai-coding.kdktekno.com/" },
+  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/" },
 ];
 
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
