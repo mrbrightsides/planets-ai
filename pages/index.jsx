@@ -7,10 +7,10 @@ import * as THREE from "three";
 
 const nodes = [
   { name: "AI Buddy", link: "https://lpf-ai-buddy.vercel.app/" },
-  { name: "AI Blockchain", link: "https://learn3ai.vercel.app/" },
-  { name: "AI Edukasi", link: "https://rantai-nexus.vercel.app/" },
-  { name: "AI Spiritual", link: "https://smartfaith.vercel.app/" },
-  { name: "AI Coding", link: "https://learnpy-ai.vercel.app/" },
+  { name: "AI Blockchain", link: "https://ai-blockchain.kdktekno.com/" },
+  { name: "AI Edukasi", link: "https://ai-edu.kdktekno.com/" },
+  { name: "AI Spiritual", link: "https://ai-faith.kdktekno.com/" },
+  { name: "AI Coding", link: "https://ai-coding.kdktekno.com/" },
 ];
 
 function FloatingSphere({ index, color, name, link, desc, onHover }) {
