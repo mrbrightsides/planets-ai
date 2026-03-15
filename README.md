@@ -1,51 +1,55 @@
-# 🪐 AI (Artificial Intelligence) Planets
+# 🌌 Planets AI — A Cosmic Playground for Artificial Minds
+## 🚀 Overview
 
-AI Planets is a creative space exploring the intersection of artificial intelligence, design, science, technology, religion, and imagination. Each AI represents a different capability — from storytelling to smart analytics.
+Planets AI is a creative experiment that transforms the concept of Artificial Intelligence into an interactive, cosmic experience.
+Each planet represents a distinct AI personality — from casual conversation partners and spiritual thinkers to academic mentors and blockchain experts.
+Users can explore this virtual galaxy, discovering how each AI interacts, learns, and collaborates with human imagination.
 
-Dive into the cosmic playground of ideas where humans and AI collaborate to build a better future.
-
-## 🚀 AI Planet Guide
-
-Explore different personalities and capabilities by switching between our specialized AI planets:
-
-*   🔵 **AI Buddy** — *Teman ngobrol santai*: curhat, ngelawak, atau diskusi ringan.
-*   🟣 **AI Blockchain** — *Penjelas teknologi & blockchain*: dari konsep sampai integrasi.
-*   🟢 **AI Edukasi** — *Asisten akademik*: riset, nulis, dan bimbingan materi kampus.
-*   🟡 **AI Spiritual** — *Refleksi dan pemikiran mendalam*: dialog santai ke arah spiritual.
-*   🔴 **AI Coding** — *Belajar coding*: partner terbaik untuk membuat web atau aplikasi.
-
-💡 *Click one of the circles in the interface to dive into different personalities of AI.*
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React 18, Tailwind CSS, Lucide React, Motion (Framer Motion)
-- **AI Engine**: Google Gemini API (`@google/genai`)
-- **Backend**: Express (serving as a proxy and static file server)
-- **Build Tool**: Vite
-
-## 🛰️ Getting Started
-
-### Prerequisites
-
-- Node.js installed
-- A Google Gemini API Key
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file based on `.env.example` and add your `GEMINI_API_KEY`.
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## 🌌 Vision
-
-We believe in a future where AI is not just a tool, but a companion in our creative and intellectual journeys. AI Planets is our first step towards that collaborative cosmic playground.
+> “What if AIs had their own planets — unique ecosystems of thought, empathy, and logic?”
 
 ---
-*Orbiting your thoughts.*
+
+## 🧠 Background
+
+The project was born from a simple idea: AI doesn’t have to live inside chat windows.
+Instead, it can be part of an imaginative universe — where every personality has its own space, purpose, and energy.
+
+Built using React Three Fiber and Framer Motion, Planets AI merges art, code, and storytelling into an immersive digital experience.
+It’s not just an interface — it’s a statement that AI can be beautiful, exploratory, and deeply human.
+
+- ✨ Key Highlights
+
+- 🪐 Interactive 3D Space – Built on React Three Fiber with floating AI planets in orbit.
+
+- 💫 Personality-Based AIs – Each planet embodies a different role: conversational, analytical, spiritual, or educational.
+
+- 🔮 Cinematic Design – Cosmic gradients, star fields, and smooth motion create a meditative exploration vibe.
+
+- ⚡ Human–AI Collaboration – Designed to show AI not as a tool, but as a creative partner.
+
+- ⚙ AI Coding – your partner to code everything. It's time for you to shine.</p>
+
+- 🌍 Part of the ELPEEF Platform – Serving as the “creative gateway” connecting other AI & Web3 projects.
+
+But here’s the twist —
+Each AI can channel different models through the AI Gateway, including:
+⚡ GPT, Claude, Gemini, Mistral, LLaMA, Grok, and Nova.
+Every model gives a different flavor to your interaction — from poetic to technical, from zen to chaotic.
+
+---
+
+## 🌠 Vision
+
+Planets AI imagines a universe where artificial intelligence is not a single entity —
+but a constellation of minds, each reflecting fragments of human creativity, curiosity, and emotion.
+
+In the future, this space will evolve into a multi-agent simulation hub,
+where users can interact with various AIs that share, debate, and even build together.
+
+---
+
+## 🔗 Explore
+
+Visit: https://planets-ai.vercel.app
+
+Built with ❤️ by Khudri — blending imagination, science, and spirituality through technology.
